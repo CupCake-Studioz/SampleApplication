@@ -13,6 +13,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let loginController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginViewController") as? LoginViewController
+        loginController?.loginSuccess = {
+            self.dismiss(animated: true) {
+            // TODO: Load data from ViewModel
+          }
+        }
+        self.present(loginController ?? UIViewController(), animated: true, completion: nil)
+    }
 
 
 }
