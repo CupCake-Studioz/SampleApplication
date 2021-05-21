@@ -6,7 +6,7 @@
 //
 import Foundation
 
-class UsernameEmptyValidation: Validation {
+class EmailEmptyValidation: Validation {
     
     func validate(input: String?) -> ValidationResult {
         
@@ -15,7 +15,7 @@ class UsernameEmptyValidation: Validation {
             return ValidationResult(status: true, errorMessage: nil)
         }
         
-        return ValidationResult(status: false, errorMessage:"Username cannot be empty")
+        return ValidationResult(status: false, errorMessage:"Email cannot be empty")
     }
     
 }

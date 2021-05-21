@@ -9,12 +9,12 @@ import Foundation
 
 class LoginAPIRepository : LoginRepository {
     
-    var username : String
+    var email : String
     var password : String
     
-    init(_ username : String, password : String) {
+    init(_ email : String, password : String) {
         
-        self.username = username
+        self.email = email
         self.password = password
     }
     
@@ -22,7 +22,7 @@ class LoginAPIRepository : LoginRepository {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             
-            if self.username.caseInsensitiveCompare("s@gmail.com") == .orderedSame && self.password.caseInsensitiveCompare("shukla") == .orderedSame {
+            if self.email.caseInsensitiveCompare("s@gmail.com") == .orderedSame && self.password.caseInsensitiveCompare("shukla") == .orderedSame {
                 completion(true, nil)
             } else {
                 completion(false, "Login failed!! Invalid Credentials")

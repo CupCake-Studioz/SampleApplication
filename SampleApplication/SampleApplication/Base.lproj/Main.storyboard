@@ -35,7 +35,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="DoY-GN-CNk"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abN-m7-rfM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abN-m7-rfM">
                                 <rect key="frame" x="32" y="204" width="350" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -105,8 +105,8 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="Zgp-Nx-4h3" id="Big-q9-FTf"/>
+                        <outlet property="tfEmailOutlet" destination="hvq-cq-P3Q" id="EYG-2q-MPG"/>
                         <outlet property="tfPasswordOutlet" destination="Y5s-6p-u0S" id="AEg-dx-P0u"/>
-                        <outlet property="tfUsernameOutlet" destination="hvq-cq-P3Q" id="xPe-Bl-bga"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

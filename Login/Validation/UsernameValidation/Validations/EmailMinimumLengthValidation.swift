@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UsernameMinimumLengthValidation: Validation {
+class EmailMinimumLengthValidation: Validation {
 
     let minimumLength : Int?
     
@@ -22,7 +22,7 @@ class UsernameMinimumLengthValidation: Validation {
             return ValidationResult(status: true, errorMessage: nil)
         }
         
-        return ValidationResult(status: false, errorMessage:"Username needs to be at least \(self.minimumLength ?? 5) characters long.")
+        return ValidationResult(status: false, errorMessage:"Email needs to be at least \(self.minimumLength ?? 5) characters long.")
     }
     
 }

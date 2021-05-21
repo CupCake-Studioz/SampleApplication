@@ -9,7 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet weak var tfUsernameOutlet: UITextField!
+    @IBOutlet weak var tfEmailOutlet: UITextField!
     @IBOutlet weak var tfPasswordOutlet: UITextField!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -72,14 +72,14 @@ class LoginViewController: UIViewController {
 // MARK: UITextFieldDelegate
 extension LoginViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        if textField == tfUsernameOutlet {
-            textField.text = viewModel.username
+        if textField == tfEmailOutlet {
+            textField.text = viewModel.email
         }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == tfUsernameOutlet {
-            tfUsernameOutlet.becomeFirstResponder()
+        if textField == tfEmailOutlet {
+            tfPasswordOutlet.becomeFirstResponder()
         } else {
             authenticate()
         }
@@ -90,8 +90,8 @@ extension LoginViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let newString = (textField.text! as NSString).replacingCharacters(in: range, with: string)
         
-        if textField == tfUsernameOutlet {
-            viewModel.updateUsername(username: newString)
+        if textField == tfEmailOutlet {
+            viewModel.updateEmail(email: newString)
         } else if textField == tfPasswordOutlet {
             viewModel.updatePassword(password: newString)
         }

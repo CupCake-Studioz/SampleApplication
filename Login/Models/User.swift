@@ -9,6 +9,6 @@
 import Foundation
 
 struct User {
-  var username = ""
+  var email = ""
   var password = ""
 }

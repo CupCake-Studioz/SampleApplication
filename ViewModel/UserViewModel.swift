@@ -14,17 +14,16 @@ enum UserValidationState {
 
 class UserViewModel {
     
-    private let minUsernameLength = 4
+    private let minEmailLength = 3
     private let minPasswordLength = 5
     
     private var user = User()
-    private var loginRepository : LoginRepository?
     
-    lazy private var usernameValidation : Validator = Validator.init([UsernameEmptyValidation(),UsernameMinimumLengthValidation(minUsernameLength)])
+    lazy private var emailValidation : Validator = Validator.init([EmailEmptyValidation(),EmailMinimumLengthValidation(minEmailLength),EmailRegexValidation()])
     lazy private var passwordValidation :Validator = Validator.init([PasswordEmptyValidation(),PasswordMinimumLengthValidation(minPasswordLength)])
     
-    var username: String {
-        return user.username
+    var email: String {
+        return user.email
     }
     
     var password: String {
@@ -34,8 +33,8 @@ class UserViewModel {
 }
 
 extension UserViewModel {
-    func updateUsername(username: String) {
-        user.username = username
+    func updateEmail(email: String) {
+        user.email = email
     }
     
     func updatePassword(password: String) {
@@ -44,10 +43,10 @@ extension UserViewModel {
     
     func validate() -> UserValidationState {
         
-        let usernameValidationResult = usernameValidation.validate(input: user.username)
+        let emailValidationResult = emailValidation.validate(input: user.email)
         
-        if !usernameValidationResult.status  {
-            return .Invalid(usernameValidationResult.errorMessage ?? "")
+        if !emailValidationResult.status  {
+            return .Invalid(emailValidationResult.errorMessage ?? "")
         }
         
         let passwordValidationResult = passwordValidation.validate(input: user.password)
@@ -61,7 +60,7 @@ extension UserViewModel {
     
     func login( completion: @escaping  (_ errorString: String?) -> Void) {
         
-        LoginRepoFactory.getRepository(username: self.user.username, password: self.user.password).fetch { success, error in
+        LoginRepoFactory.getRepository(email: self.user.email, password: self.user.password).fetch { success, error in
             
             if success {
                 completion(nil)

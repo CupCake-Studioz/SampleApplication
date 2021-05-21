@@ -9,8 +9,8 @@ import Foundation
 
 class LoginRepoFactory {
     
-    static func getRepository(username : String , password : String) -> LoginRepository {
+    static func getRepository(email : String , password : String) -> LoginRepository {
         
-        return LoginAPIRepository.init(username, password: password)
+        return LoginAPIRepository.init(email, password: password)
     }
 }
