@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E919DBBB26578CF6005A98BE /* LoginAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DBBA26578CF6005A98BE /* LoginAPIRepository.swift */; };
+		E919DBBD265790DF005A98BE /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DBBC265790DF005A98BE /* LoginRepository.swift */; };
+		E919DBBF265792FE005A98BE /* LoginRepoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DBBE265792FE005A98BE /* LoginRepoFactory.swift */; };
+		E919DBC426579A1F005A98BE /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DBC226579A1F005A98BE /* ViewExtension.swift */; };
+		E919DBC526579A1F005A98BE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DBC326579A1F005A98BE /* ColorExtension.swift */; };
+		E919DBD526579A4F005A98BE /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DBD426579A4F005A98BE /* DashboardViewController.swift */; };
+		E919DBE92657A466005A98BE /* BottomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DBE32657A466005A98BE /* BottomTabBarView.swift */; };
+		E919DBEA2657A466005A98BE /* BottomTabBarCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DBE52657A466005A98BE /* BottomTabBarCVCell.swift */; };
+		E919DBEB2657A466005A98BE /* BottomTabBarCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E919DBE62657A466005A98BE /* BottomTabBarCVCell.xib */; };
+		E919DBEC2657A466005A98BE /* BottomTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E919DBE72657A466005A98BE /* BottomTabBarView.xib */; };
+		E919DBED2657A466005A98BE /* BottomTabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DBE82657A466005A98BE /* BottomTabBarModel.swift */; };
+		E919DBF42657B5F9005A98BE /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DBF32657B5F9005A98BE /* ViewController1.swift */; };
+		E919DC072657B687005A98BE /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E919DC062657B687005A98BE /* TabBar.storyboard */; };
 		E9F632EB2656ADB9009CCAA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F632EA2656ADB9009CCAA5 /* AppDelegate.swift */; };
 		E9F632ED2656ADB9009CCAA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F632EC2656ADB9009CCAA5 /* SceneDelegate.swift */; };
 		E9F632EF2656ADB9009CCAA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F632EE2656ADB9009CCAA5 /* ViewController.swift */; };
@@ -16,10 +29,22 @@
 		E9F633032656AE8F009CCAA5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F633022656AE8F009CCAA5 /* LoginViewController.swift */; };
 		E9F633052656B143009CCAA5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F633042656B143009CCAA5 /* UserViewModel.swift */; };
 		E9F633092656B17B009CCAA5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F633072656B17B009CCAA5 /* User.swift */; };
-		E9F6330F2656B1E4009CCAA5 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6330D2656B1E4009CCAA5 /* LoginService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E919DBBA26578CF6005A98BE /* LoginAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIRepository.swift; sourceTree = "<group>"; };
+		E919DBBC265790DF005A98BE /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		E919DBBE265792FE005A98BE /* LoginRepoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepoFactory.swift; sourceTree = "<group>"; };
+		E919DBC226579A1F005A98BE /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		E919DBC326579A1F005A98BE /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		E919DBD426579A4F005A98BE /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		E919DBE32657A466005A98BE /* BottomTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomTabBarView.swift; sourceTree = "<group>"; };
+		E919DBE52657A466005A98BE /* BottomTabBarCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomTabBarCVCell.swift; sourceTree = "<group>"; };
+		E919DBE62657A466005A98BE /* BottomTabBarCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomTabBarCVCell.xib; sourceTree = "<group>"; };
+		E919DBE72657A466005A98BE /* BottomTabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomTabBarView.xib; sourceTree = "<group>"; };
+		E919DBE82657A466005A98BE /* BottomTabBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomTabBarModel.swift; sourceTree = "<group>"; };
+		E919DBF32657B5F9005A98BE /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		E919DC062657B687005A98BE /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		E9F632E72656ADB9009CCAA5 /* SampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F632EA2656ADB9009CCAA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F632EC2656ADB9009CCAA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,10 +53,9 @@
 		E9F632F32656ADB9009CCAA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9F632F62656ADB9009CCAA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9F632F82656ADB9009CCAA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9F633022656AE8F009CCAA5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		E9F633022656AE8F009CCAA5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9F633042656B143009CCAA5 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		E9F633072656B17B009CCAA5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		E9F6330D2656B1E4009CCAA5 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +69,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E919DBB926578CD6005A98BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9F633022656AE8F009CCAA5 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E919DBC026579A15005A98BE /* CommonModules */ = {
+			isa = PBXGroup;
+			children = (
+				E919DBE22657A466005A98BE /* BottomTabbar */,
+				E919DBC126579A1F005A98BE /* Extensions */,
+			);
+			path = CommonModules;
+			sourceTree = "<group>";
+		};
+		E919DBC126579A1F005A98BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E919DBC226579A1F005A98BE /* ViewExtension.swift */,
+				E919DBC326579A1F005A98BE /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E919DBD326579A4F005A98BE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				E919DC052657B673005A98BE /* Storyboard */,
+				E919DBF22657B5CD005A98BE /* Controllers */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		E919DBE22657A466005A98BE /* BottomTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				E919DBF12657B586005A98BE /* Model */,
+				E919DBF02657B570005A98BE /* View */,
+				E919DBE42657A466005A98BE /* BottomTabBarCVCell */,
+			);
+			path = BottomTabbar;
+			sourceTree = "<group>";
+		};
+		E919DBE42657A466005A98BE /* BottomTabBarCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				E919DBE52657A466005A98BE /* BottomTabBarCVCell.swift */,
+				E919DBE62657A466005A98BE /* BottomTabBarCVCell.xib */,
+			);
+			path = BottomTabBarCVCell;
+			sourceTree = "<group>";
+		};
+		E919DBF02657B570005A98BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E919DBE32657A466005A98BE /* BottomTabBarView.swift */,
+				E919DBE72657A466005A98BE /* BottomTabBarView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E919DBF12657B586005A98BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E919DBE82657A466005A98BE /* BottomTabBarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E919DBF22657B5CD005A98BE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E919DBD426579A4F005A98BE /* DashboardViewController.swift */,
+				E919DBF32657B5F9005A98BE /* ViewController1.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E919DC052657B673005A98BE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E919DC062657B687005A98BE /* TabBar.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		E9F632DE2656ADB9009CCAA5 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				E9F632FE2656AE4A009CCAA5 /* Login */,
+				E919DBD326579A4F005A98BE /* Dashboard */,
+				E919DBC026579A15005A98BE /* CommonModules */,
 				E9F632EA2656ADB9009CCAA5 /* AppDelegate.swift */,
 				E9F632EC2656ADB9009CCAA5 /* SceneDelegate.swift */,
 				E9F632EE2656ADB9009CCAA5 /* ViewController.swift */,
@@ -79,22 +193,13 @@
 		E9F632FE2656AE4A009CCAA5 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				E919DBB926578CD6005A98BE /* Controller */,
 				E9F6330B2656B1E4009CCAA5 /* API */,
 				E9F633062656B17B009CCAA5 /* Models */,
 				E9F633012656AE6F009CCAA5 /* ViewModel */,
-				E9F632FF2656AE55009CCAA5 /* Controller */,
 			);
 			name = Login;
 			path = ../../Login;
-			sourceTree = "<group>";
-		};
-		E9F632FF2656AE55009CCAA5 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				E9F633022656AE8F009CCAA5 /* LoginViewController.swift */,
-			);
-			name = Controller;
-			path = ../Controller;
 			sourceTree = "<group>";
 		};
 		E9F633012656AE6F009CCAA5 /* ViewModel */ = {
@@ -117,7 +222,9 @@
 		E9F6330B2656B1E4009CCAA5 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				E9F6330D2656B1E4009CCAA5 /* LoginService.swift */,
+				E919DBBC265790DF005A98BE /* LoginRepository.swift */,
+				E919DBBA26578CF6005A98BE /* LoginAPIRepository.swift */,
+				E919DBBE265792FE005A98BE /* LoginRepoFactory.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -180,8 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F632F72656ADB9009CCAA5 /* LaunchScreen.storyboard in Resources */,
+				E919DBEC2657A466005A98BE /* BottomTabBarView.xib in Resources */,
 				E9F632F42656ADB9009CCAA5 /* Assets.xcassets in Resources */,
 				E9F632F22656ADB9009CCAA5 /* Main.storyboard in Resources */,
+				E919DC072657B687005A98BE /* TabBar.storyboard in Resources */,
+				E919DBEB2657A466005A98BE /* BottomTabBarCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +302,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E919DBF42657B5F9005A98BE /* ViewController1.swift in Sources */,
 				E9F633032656AE8F009CCAA5 /* LoginViewController.swift in Sources */,
 				E9F632EF2656ADB9009CCAA5 /* ViewController.swift in Sources */,
+				E919DBBF265792FE005A98BE /* LoginRepoFactory.swift in Sources */,
 				E9F633092656B17B009CCAA5 /* User.swift in Sources */,
+				E919DBC426579A1F005A98BE /* ViewExtension.swift in Sources */,
 				E9F632EB2656ADB9009CCAA5 /* AppDelegate.swift in Sources */,
+				E919DBE92657A466005A98BE /* BottomTabBarView.swift in Sources */,
+				E919DBD526579A4F005A98BE /* DashboardViewController.swift in Sources */,
 				E9F633052656B143009CCAA5 /* UserViewModel.swift in Sources */,
 				E9F632ED2656ADB9009CCAA5 /* SceneDelegate.swift in Sources */,
-				E9F6330F2656B1E4009CCAA5 /* LoginService.swift in Sources */,
+				E919DBBB26578CF6005A98BE /* LoginAPIRepository.swift in Sources */,
+				E919DBEA2657A466005A98BE /* BottomTabBarCVCell.swift in Sources */,
+				E919DBED2657A466005A98BE /* BottomTabBarModel.swift in Sources */,
+				E919DBC526579A1F005A98BE /* ColorExtension.swift in Sources */,
+				E919DBBD265790DF005A98BE /* LoginRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

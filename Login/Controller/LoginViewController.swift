@@ -13,9 +13,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var tfPasswordOutlet: UITextField!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    private var viewModel = UserViewModel()
     
-    var loginSuccess: (() -> Void)?
+    private var viewModel = UserViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,19 +36,30 @@ class LoginViewController: UIViewController {
         
         switch viewModel.validate() {
         case .Valid:
+            
             viewModel.login() { errorMessage in
+                
+                self.activityIndicator.stopAnimating()
+                
                 if let errorMessage = errorMessage {
                     self.displayErrorMessage(errorMessage: errorMessage)
+                    
                 } else {
-                    self.loginSuccess?()
+                    
+                    self.dismiss(animated: true) {
+                        
+                        let dashboardController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "DashboardViewController")
+                        let navigationController = UINavigationController.init(rootViewController: dashboardController)
+                        navigationController.modalPresentationStyle = .fullScreen
+                        self.present(navigationController, animated: true, completion: nil)
+                    }
                 }
-                self.activityIndicator.stopAnimating()
             }
         case .Invalid(let error):
             displayErrorMessage(errorMessage: error)
             
             self.activityIndicator.stopAnimating()
-
+            
         }
     }
     func dismissKeyboard() {
@@ -64,12 +74,6 @@ extension LoginViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == tfUsernameOutlet {
             textField.text = viewModel.username
-        }
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField == tfUsernameOutlet {
-            textField.text = viewModel.protectedUsername
         }
     }
     
@@ -102,7 +106,7 @@ extension LoginViewController: UITextFieldDelegate {
 
 // MARK: Private Methods
 private extension LoginViewController {
- 
+    
     func displayErrorMessage(errorMessage: String) {
         let alertController = UIAlertController(title: nil, message: errorMessage, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)

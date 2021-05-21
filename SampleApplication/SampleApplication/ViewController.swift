@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -16,15 +16,14 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        let loginController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginViewController") as? LoginViewController
-        loginController?.loginSuccess = {
-            self.dismiss(animated: true) {
-            // TODO: Load data from ViewModel
-          }
-        }
-        self.present(loginController ?? UIViewController(), animated: true, completion: nil)
+//        let loginController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginViewController")
+//        self.present(loginController, animated: true, completion: nil)
+        
+        let dashboardController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "DashboardViewController")
+        
+        self.present(dashboardController, animated: true, completion: nil)
     }
-
-
+    
+    
 }
 
