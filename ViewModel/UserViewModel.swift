@@ -31,11 +31,6 @@ class UserViewModel {
         return user.password
     }
     
-    init() {
-        
-        
-        
-    }
 }
 
 extension UserViewModel {
