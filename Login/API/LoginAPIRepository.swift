@@ -20,12 +20,12 @@ class LoginAPIRepository : LoginRepository {
     
     func fetch(completion: @escaping LoginHandler) {
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             
-            if self.username.caseInsensitiveCompare("shubham") == .orderedSame && self.password.caseInsensitiveCompare("shukla") == .orderedSame {
+            if self.username.caseInsensitiveCompare("s@gmail.com") == .orderedSame && self.password.caseInsensitiveCompare("shukla") == .orderedSame {
                 completion(true, nil)
             } else {
-                completion(false, "Login failed")
+                completion(false, "Login failed!! Invalid Credentials")
             }
         }
     }

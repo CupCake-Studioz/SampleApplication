@@ -20,12 +20,21 @@ class UserViewModel {
     private var user = User()
     private var loginRepository : LoginRepository?
     
+    lazy private var usernameValidation : Validator = Validator.init([UsernameEmptyValidation(),UsernameMinimumLengthValidation(minUsernameLength)])
+    lazy private var passwordValidation :Validator = Validator.init([PasswordEmptyValidation(),PasswordMinimumLengthValidation(minPasswordLength)])
+    
     var username: String {
         return user.username
     }
     
     var password: String {
         return user.password
+    }
+    
+    init() {
+        
+        
+        
     }
 }
 
@@ -39,16 +48,17 @@ extension UserViewModel {
     }
     
     func validate() -> UserValidationState {
-        if user.username.isEmpty || user.password.isEmpty {
-            return .Invalid("Username and password are required.")
+        
+        let usernameValidationResult = usernameValidation.validate(input: user.username)
+        
+        if !usernameValidationResult.status  {
+            return .Invalid(usernameValidationResult.errorMessage ?? "")
         }
         
-        if user.username.count < minUsernameLength {
-            return .Invalid("Username needs to be at least \(minUsernameLength) characters long.")
-        }
+        let passwordValidationResult = passwordValidation.validate(input: user.password)
         
-        if user.password.count < minPasswordLength {
-            return .Invalid("Password needs to be at least \(minPasswordLength) characters long.")
+        if !passwordValidationResult.status  {
+            return .Invalid(passwordValidationResult.errorMessage ?? "")
         }
         
         return .Valid

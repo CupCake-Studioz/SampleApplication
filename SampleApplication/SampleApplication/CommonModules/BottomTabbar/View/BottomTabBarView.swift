@@ -27,8 +27,8 @@ class BottomTabBarView: UIView{
     private let bottomListCVCell = "BottomTabBarCVCell"
     
     private var actionCellState: Actions = .None
-    private lazy var moreActionCellBottomListModel = BottomTabBarModel(title: "MORE", image: UIImage(named: "expand-more"), action: .More)
-    private lazy var lessActionCellBottomListModel = BottomTabBarModel(title: "LESS", image: UIImage(named: "expand-less"), action: .Less)
+    private lazy var moreActionCellBottomListModel = BottomTabBarModel(title: "MORE", image: UIImage(named: "expand-less"), action: .More)
+    private lazy var lessActionCellBottomListModel = BottomTabBarModel(title: "LESS", image: UIImage(named: "expand-more"), action: .Less)
     
     private var displayItemsList = [BottomTabBarModel]()
     
