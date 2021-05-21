@@ -206,10 +206,18 @@
 		E919DC152657D11F005A98BE /* UsernameValidation */ = {
 			isa = PBXGroup;
 			children = (
-				E919DC162657D132005A98BE /* UsernameMinimumLengthValidation.swift */,
-				E919DC182657D15B005A98BE /* UsernameEmptyValidation.swift */,
+				E919DC1E2657D6AD005A98BE /* Validations */,
 			);
 			path = UsernameValidation;
+			sourceTree = "<group>";
+		};
+		E919DC1E2657D6AD005A98BE /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				E919DC182657D15B005A98BE /* UsernameEmptyValidation.swift */,
+				E919DC162657D132005A98BE /* UsernameMinimumLengthValidation.swift */,
+			);
+			path = Validations;
 			sourceTree = "<group>";
 		};
 		E9F632DE2656ADB9009CCAA5 = {
@@ -249,7 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				E919DBB926578CD6005A98BE /* Controller */,
-				E9F6330B2656B1E4009CCAA5 /* API */,
+				E9F6330B2656B1E4009CCAA5 /* Repository */,
 				E9F633062656B17B009CCAA5 /* Models */,
 				E9F633012656AE6F009CCAA5 /* ViewModel */,
 				E919DC0A2657CE4C005A98BE /* Validation */,
@@ -275,14 +283,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E9F6330B2656B1E4009CCAA5 /* API */ = {
+		E9F6330B2656B1E4009CCAA5 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				E919DBBC265790DF005A98BE /* LoginRepository.swift */,
 				E919DBBA26578CF6005A98BE /* LoginAPIRepository.swift */,
 				E919DBBE265792FE005A98BE /* LoginRepoFactory.swift */,
 			);
-			path = API;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

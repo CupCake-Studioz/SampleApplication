@@ -1,5 +1,5 @@
 //
-//  LSPasswordValidation.swift
+//  Validation.swift
 //  SampleApplication
 //
 //  Created by Shubham Shukla on 21/05/21.
