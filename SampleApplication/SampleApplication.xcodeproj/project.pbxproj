@@ -188,19 +188,11 @@
 			path = Validation;
 			sourceTree = "<group>";
 		};
-		E919DC0F2657CF05005A98BE /* Validations */ = {
+		E919DC122657D02B005A98BE /* PasswordValidation */ = {
 			isa = PBXGroup;
 			children = (
 				E919DC102657CF1F005A98BE /* PasswordMinimumLengthValidation.swift */,
 				E919DC132657D096005A98BE /* PasswordEmptyValidation.swift */,
-			);
-			path = Validations;
-			sourceTree = "<group>";
-		};
-		E919DC122657D02B005A98BE /* PasswordValidation */ = {
-			isa = PBXGroup;
-			children = (
-				E919DC0F2657CF05005A98BE /* Validations */,
 			);
 			path = PasswordValidation;
 			sourceTree = "<group>";
@@ -208,19 +200,11 @@
 		E919DC152657D11F005A98BE /* UsernameValidation */ = {
 			isa = PBXGroup;
 			children = (
-				E919DC1E2657D6AD005A98BE /* Validations */,
-			);
-			path = UsernameValidation;
-			sourceTree = "<group>";
-		};
-		E919DC1E2657D6AD005A98BE /* Validations */ = {
-			isa = PBXGroup;
-			children = (
 				E919DC182657D15B005A98BE /* EmailEmptyValidation.swift */,
 				E919DC162657D132005A98BE /* EmailMinimumLengthValidation.swift */,
 				E9DB21E32657E590001BC9E1 /* EmailRegexValidation.swift */,
 			);
-			path = Validations;
+			path = UsernameValidation;
 			sourceTree = "<group>";
 		};
 		E9F632DE2656ADB9009CCAA5 = {
