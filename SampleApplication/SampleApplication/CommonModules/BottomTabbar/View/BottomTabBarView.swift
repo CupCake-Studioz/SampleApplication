@@ -51,8 +51,8 @@ class BottomTabBarView: UIView{
         cvBottomList.dataSource = self
         cvBottomList.delegate = self
         cvBottomList.register(UINib(nibName: bottomListCVCell, bundle: nil), forCellWithReuseIdentifier: bottomListCVCell)
-        cvBottomList.backgroundColor = UIColor.Neutral_N100
-        uvBottomListContainer.backgroundColor = UIColor.Neutral_N100
+        cvBottomList.backgroundColor = UIColor.Custom_FAFAFA
+        uvBottomListContainer.backgroundColor = UIColor.Custom_FAFAFA
     }
     
     func setupData(){

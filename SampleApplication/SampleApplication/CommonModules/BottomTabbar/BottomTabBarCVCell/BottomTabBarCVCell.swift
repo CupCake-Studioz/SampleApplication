@@ -21,14 +21,14 @@ class BottomTabBarCVCell: UICollectionViewCell {
     }
     
     private func setColor(){
-        uvBack.backgroundColor = UIColor.Neutral_N100
-        lblTitle.textColor = UIColor.Neutral_N900
+        uvBack.backgroundColor = UIColor.Custom_FAFAFA
+        lblTitle.textColor = UIColor.Custom_2C2C2C
     }
     
     func setData(_ bottomListModel: BottomTabBarModel){
         lblTitle.text = bottomListModel.title
         ivIcon.image = bottomListModel.image
-        lblTitle.textColor = UIColor.Neutral_N900
+        lblTitle.textColor = UIColor.Custom_2C2C2C
     }
     
 }
